@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tab_include.HelloController">
+   <center>
+       <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+           <Tab text="Seite 1">
+               <fx:include source="seite1.fxml" />
+           </Tab>
+           <Tab text="Seite 2">
+               <fx:include source="seite2.fxml" />
+           </Tab>
+           <Tab text="Seite 3">
+               <fx:include source="seite3.fxml" />
+           </Tab>
+       </TabPane>
+   </center>
+   <bottom>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+         <items>
+            <Button mnemonicParsing="false" onAction="#onBack" text="Back" />
+            <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onNext" text="Next" textAlignment="JUSTIFY" />
+         </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>
