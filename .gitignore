@@ -1,0 +1,76 @@
+##################################################
+# Java allgemein
+##################################################
+# Kompilierte Klassen
+*.class
+
+# Logfiles
+*.log
+
+# Temporäre Dateien
+*.tmp
+*.swp
+*~
+*.bak
+
+# Package-Archive
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+##################################################
+# Build-Verzeichnisse (für alle Unterprojekte)
+##################################################
+/target/
+/out/
+/build/
+/bin/
+
+# Manche Tools legen das auch in Unterordnern an:
+**/target/
+**/out/
+**/build/
+**/bin/
+
+##################################################
+# IntelliJ IDEA
+##################################################
+.idea/
+*.iml
+*.iws
+
+# IntelliJ-Output (falls anders konfiguriert)
+**/.idea/
+**/*.iml
+
+##################################################
+# Betriebssystem-Specials
+##################################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+##################################################
+# Sonstiges
+##################################################
+# Coverage / Reports
+**/jacoco.exec
+**/coverage/
+**/surefire-reports/
+
+# IDE-spezifische Einstellungen anderer IDEs (falls mal benutzt)
+.vscode/
+.project
+.classpath
+.settings/
